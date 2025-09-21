@@ -1,0 +1,81 @@
+# =============================
+# Python Bytecode / Cache
+# =============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =============================
+# Virtual Environments
+# =============================
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# =============================
+# VS Code / IDE settings
+# =============================
+.vscode/
+.idea/
+
+# =============================
+# Jupyter Notebook / IPython
+# =============================
+.ipynb_checkpoints/
+profile_default/
+.ipython/
+
+# =============================
+# Python package / build
+# =============================
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+*.manifest
+*.spec
+
+# =============================
+# OS / System files
+# =============================
+.DS_Store
+Thumbs.db
+
+# =============================
+# Logs
+# =============================
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =============================
+# Models (optional: if large)
+# =============================
+models/*.keras
+models/class_indices.json
+
+# =============================
+# Snapshots (captured images)
+# =============================
+snapshots/
+
+# =============================
+# Others / caches
+# =============================
+*.cover
+.coverage
+.coverage.*
+.cache
+.tox/
+.nox/
+.pytest_cache/
+
+# =============================
+# Dataset folder
+# =============================
+dataset/
+
