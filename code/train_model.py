@@ -4,10 +4,10 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropou
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 # Paths
-train_path = "C:/Users/NAGABHOOSHAN/OneDrive/Desktop/EMOTIONIQ/dataset/train"
-test_path  = "C:/Users/NAGABHOOSHAN/OneDrive/Desktop/EMOTIONIQ/dataset/test"
-model_path = "C:/Users/NAGABHOOSHAN/OneDrive/Desktop/EMOTIONIQ/models/emotion_model.keras"
-classes_path = "C:/Users/NAGABHOOSHAN/OneDrive/Desktop/EMOTIONIQ/models/class_indices.json"
+train_path = "./dataset/train"
+test_path  = "./dataset/test"
+model_path = "./models/emotion_model.keras"
+classes_path = "./models/class_indices.json"
 
 # Image data generators
 datagen = ImageDataGenerator(rescale=1./255)
