@@ -37,50 +37,40 @@ EMOTIONIQ/
 ---
 
 ## 📥 Dataset Download
-This project uses a Kaggle dataset containing 7 emotion classes.  
-Since the dataset is large, it is **not included in this repository**.
+This project uses the FER 2013 dataset
+ for training and testing.
 
-Install Kaggle CLI:
-```
-pip install kaggle
-```
-Place your Kaggle API key (kaggle.json) in:
+🔽 Steps to Download:
 
-Windows:
-```
- C:\Users\<YourName>\.kaggle\kaggle.json
-```
+1.Go to the dataset page on Kaggle:
+👉 FER 2013 Dataset
 
-Linux/Mac:
-```
- ~/.kaggle/kaggle.json
-```
-Download and unzip the dataset into the dataset/ folder:
+2.Click the Download button (requires a free Kaggle account).
+
+3.You will get a file named fer2013.zip.
+
+4.Extract the contents of the zip file.
+
+5.Place the extracted folders into your project structure so it looks like this:
 
 ```
-kaggle datasets download -d <dataset-author>/<dataset-name> -p dataset --unzip
-```
-Your final structure should look like:
+EMOTIONIQ/
+├── dataset/
+│   ├── train/
+│   └── test/
+├── models/
+├── code/
+└── README.md
 
 ```
-dataset/
-├── train/
-│   ├── angry/
-│   ├── disgust/
-│   ├── fear/
-│   ├── happy/
-│   ├── sad/
-│   ├── surprise/
-│   ├── neutral/
-├── test/
-    ├── angry/
-    ├── disgust/
-    ├── fear/
-    ├── happy/
-    ├── sad/
-    ├── surprise/
-    ├── neutral/
+6.Once the dataset is placed correctly, you can train your model:
+```
+python train_model.py
+```
 
+7.For real-time emotion detection (using your webcam):
+```
+python real_time_detection.py
 ```
 ---
 
