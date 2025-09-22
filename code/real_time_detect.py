@@ -5,8 +5,9 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 
 # Paths
-model_path = "C:/Users/NAGABHOOSHAN/OneDrive/Desktop/EMOTIONIQ/models/emotion_model.keras"
-classes_path = "C:/Users/NAGABHOOSHAN/OneDrive/Desktop/EMOTIONIQ/models/class_indices.json"
+model_path = "./models/emotion_model.keras"
+classes_path = "./models/class_indices.json"
+
 
 # Load model
 model = load_model(model_path)
